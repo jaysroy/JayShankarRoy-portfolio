@@ -1,7 +1,7 @@
 :root {
     --bg: #0a0a0c;
     --card-bg: #16161a;
-    --accent: #00d4ff;
+    --accent: #e90505;
     --text: #e0e0e0;
 }
 
@@ -98,3 +98,46 @@ footer {
 }
 
 .social-links a:hover { color: var(--accent); }
+
+/* Project Section Styles */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+}
+
+.project-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+
+.tags { margin: 1rem 0; }
+.tags span {
+    background: rgba(0, 212, 255, 0.1);
+    color: var(--accent);
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+}
+
+.project-link:hover { border-bottom: 1px solid var(--accent); }
