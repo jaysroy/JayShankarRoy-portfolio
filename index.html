@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Tracker | Jay Shankar Roy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="daily-theme">
+
+    <button id="themeToggle">Switch to Beast Mode ⚡</button>
+
+    <div class="container">
+        <header>
+            <h1 id="mainTitle">Daily Bloom</h1>
+            <p id="subTitle">Small steps every day.</p>
+        </header>
+
+        <div class="input-group">
+            <input type="text" id="goalInput" placeholder="Enter a goal...">
+            <button id="addBtn">+</button>
+        </div>
+
+        <ul id="goalList"></ul>
+
+        <div class="actions">
+            <button id="saveBtn" class="action-btn">Save Progress</button>
+            <button id="resetBtn" class="action-btn">Reset All</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
